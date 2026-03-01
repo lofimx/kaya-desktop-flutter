@@ -4,7 +4,7 @@ This file should **not be modified by agents.**
 
 ## Rewrite `kaya-gnome` to `kaya-desktop-flutter` to support all desktop operating systems
 
-Read and follow the instructions in [@PLAN.md](file:///home/steven/work/lofimx/kaya-desktop-flutter/doc/plan/PLAN.md).
+Read and follow the instructions in [@PLAN.md](file:///home/steven/work/lofimx/kaya-desktop-flutter/doc/plan/PLAN.md). Ask any questions you have before finalizing the plan. Confirm before implementation.
 
 Port the entire project found at [@kaya-gnome](file:///home/steven/work/gnome/steven/kaya-gnome/) to [Flutter For Desktop](https://flutter.dev/multi-platform/desktop) in **this repository** with the intention of supporting all major operating systems (Windows, MacOS, Linux).
 
