@@ -1,0 +1,22 @@
+app-id: org.savebutton.kaya
+runtime: org.freedesktop.Platform
+runtime-version: '24.08'
+sdk: org.freedesktop.Sdk
+command: kaya_desktop
+finish-args:
+  - --share=ipc
+  - --socket=fallback-x11
+  - --socket=wayland
+  - --share=network
+  - --filesystem=home
+  - --device=dri
+modules:
+  - name: kaya_desktop
+    buildsystem: simple
+    build-commands:
+      - cp -r bundle /app/kaya_desktop
+      - install -Dm755 bundle/kaya_desktop /app/bin/kaya_desktop
+      - install -Dm644 org.savebutton.kaya.desktop /app/share/applications/org.savebutton.kaya.desktop
+    sources:
+      - type: dir
+        path: .

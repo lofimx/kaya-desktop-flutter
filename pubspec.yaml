@@ -1,0 +1,83 @@
+name: kaya_desktop
+description: "Save Button - Local-first bookmarking and notes app for desktop"
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.10.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # UI
+  cupertino_icons: ^1.0.8
+  flutter_svg: ^2.0.10
+
+  # State Management
+  flutter_riverpod: ^2.6.1
+  riverpod_annotation: ^2.6.1
+
+  # Data Models
+  freezed_annotation: ^2.4.4
+
+  # Logging
+  logger: ^2.5.0
+
+  # Storage
+  shared_preferences: ^2.3.5
+  path_provider: ^2.1.5
+  flutter_secure_storage: ^9.2.4
+
+  # Network
+  http: ^1.2.2
+
+  # Metadata parsing
+  toml: ^0.16.0
+
+  # URL handling
+  url_launcher: ^6.3.1
+
+  # Routing
+  go_router: ^14.6.3
+
+  # Desktop window management
+  window_manager: ^0.4.3
+
+  # Desktop drag and drop
+  desktop_drop: ^0.5.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  build_runner: ^2.4.14
+  riverpod_generator: ^2.6.3
+  freezed: ^2.5.7
+  flutter_launcher_icons: ^0.14.3
+  msix: ^3.16.8
+
+flutter:
+  uses-material-design: true
+  assets:
+    - doc/design/
+
+flutter_launcher_icons:
+  image_path: "doc/design/yellow-floppy3.svg"
+  ios: false
+  android: false
+  macos:
+    generate: true
+  windows:
+    generate: true
+  linux:
+    generate: true
+
+msix_config:
+  display_name: Save Button
+  publisher_display_name: lofimx
+  identity_name: org.savebutton.kaya
+  msix_version: 1.0.0.0
+  logo_path: doc/design/yellow-floppy3.svg
+  capabilities: internetClient, runFullTrust
+  store: false

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Save Button
+Comment=Local-first bookmarking and notes app
+Exec=kaya_desktop
+Icon=org.savebutton.kaya
+Terminal=false
+Type=Application
+Categories=Utility;
+StartupWMClass=kaya_desktop
